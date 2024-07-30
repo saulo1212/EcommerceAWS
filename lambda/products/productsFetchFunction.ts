@@ -10,6 +10,10 @@ export async function handler (event: APIGatewayProxyEvent, context:Context): Pr
 
     const method = event.httpMethod
 
+    const lambdaRequestId = context.awsRequestId
+
+    const apiRequestId = event.requestContext.requestId
+
     if(event.resource === '/products'){
 
         if(method === 'GET') {
