@@ -15,7 +15,7 @@ export class ProductsAppStack extends cdk.Stack {
 
         super(scope, id, props)
 
-        const productsFetchFunction = "ProductsFetchFunction";
+        const productsFetchFunction = "ProductsFetchFunction1";
 
         this.productsFetchHandler = new lambdaNodeJs.NodejsFunction(this,
             productsFetchFunction, 

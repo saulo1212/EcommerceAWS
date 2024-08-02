@@ -18,13 +18,13 @@ const tags = {
     team: 'SiecolaCode'
 }
 
-const  productsAppStack = new ProductsAppStack(app, 'ProductsApp',{
+const  productsAppStack = new ProductsAppStack(app, 'ProductsAppNew1',{
     tags:tags,
     env:env
 })
 
 
-const eCommerceApiStack = new ECommerceApiStack(app, 'ECommerceApi', {
+const eCommerceApiStack = new ECommerceApiStack(app, 'ECommerceApi1', {
     productsFetchHandler: productsAppStack.productsFetchHandler,
     tags: tags,
     env: env

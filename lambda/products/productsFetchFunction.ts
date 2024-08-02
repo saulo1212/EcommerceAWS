@@ -16,7 +16,7 @@ export async function handler (event: APIGatewayProxyEvent, context:Context): Pr
 
     console.log(`API gataway RequestID: ${apiRequestId} - Lambda requestID: ${lambdaRequestId}`)
 
-    if(event.resource === '/products'){
+    if(event.resource === '/products1'){
 
         if(method === 'GET') {
 
